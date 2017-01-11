@@ -12,7 +12,7 @@ public protocol URLQueryItemContainerable {
     var queryItems: [URLQueryItem]? { get }
 }
 
-// Alread conformed
+// Already conformed
 extension URLComponents: URLQueryItemContainerable {}
 
 public func findQueryItem(queryItems: [URLQueryItem], name: String) -> URLQueryItem? {
