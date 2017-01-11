@@ -12,3 +12,5 @@ type_name:
   max_length:
     warning: 50
     error: 80
+trailing_comma:
+  mandatory_comma: true

@@ -25,7 +25,7 @@ class URLExtensionsTests: XCTestCase {
     let targets = [
         (url: URL(string: "https://example.com:3000/users/sign_in?user=hoge#link1")!, expect: "https://example.com:3000"),
         (url: URL(string: "https://user:pass@example.com:3000/users/sign_in?user=hoge#link2")!, expect: "https://user:pass@example.com:3000"),
-        (url: URL(fileURLWithPath: "/foo/bar/buz.png"), expect: "file://")
+        (url: URL(fileURLWithPath: "/foo/bar/buz.png"), expect: "file://"),
     ]
 
     func testURL() {

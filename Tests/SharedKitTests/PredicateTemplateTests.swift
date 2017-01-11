@@ -37,7 +37,7 @@ class PredicateTemplateTests: XCTestCase {
         let targets = [
             Target(name: nil, number: nil),
             Target(name: "foo", number: 1),
-            Target(name: "bar", number: 2)
+            Target(name: "bar", number: 2),
         ]
         return targets as NSArray
     }

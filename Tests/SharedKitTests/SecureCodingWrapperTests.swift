@@ -52,7 +52,7 @@ class SecureCodingWrapperTests: XCTestCase {
         (id: nil, text: ""),
         (id: 12345, text: nil),
         (id: 12345, text: "test"),
-        (id: nil, text: "test")
+        (id: nil, text: "test"),
     ]
 
     override func setUp() {
