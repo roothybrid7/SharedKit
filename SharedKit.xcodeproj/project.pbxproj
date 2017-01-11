@@ -582,6 +582,7 @@
 				218F1FD71E25FDB300B85D8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		OBJ_17 /* Build configuration list for PBXNativeTarget "SharedKit" */ = {
 			isa = XCConfigurationList;
