@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 /// A struct is a key to fetch object from the receiver.
 public struct KeyValueType<ValType>: RawRepresentable, ExpressibleByStringLiteral {
 
