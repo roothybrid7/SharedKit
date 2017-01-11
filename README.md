@@ -5,6 +5,16 @@
 
 SharedKit is an API for useful functions of cocoa frameworks.
 
+## Installation
+
+### Carthage
+
+Add the following to your Cartfile:
+
+```bash
+github "roothybrid7/SharedKit"
+```
+
 ## Directory structure
 
 The following is SharedKit's directory structure.
