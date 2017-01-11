@@ -1,6 +1,6 @@
 # SharedKit
 
-[![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/roothybrid7/SharedKit)
+[![Build Status](https://travis-ci.org/roothybrid7/SharedKit.svg?branch=master)](https://travis-ci.org/roothybrid7/SharedKit)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/roothybrid7/SharedKit)
 
 SharedKit is an API for useful functions of cocoa frameworks.
