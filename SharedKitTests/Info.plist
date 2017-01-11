@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+    <key>TestBoolValue</key>
+    <true/>
+    <key>TestIntValue</key>
+    <integer>2</integer>
+    <key>TestDecimalValue</key>
+    <real>0.25</real>
+    <key>TestStringValue</key>
+    <string>BundleTests</string>
+    <key>TestStringsValue</key>
+    <array>
+        <string>str1</string>
+        <string>str2</string>
+    </array>
+    <key>TestArrayIntValues</key>
+    <array>
+        <integer>1</integer>
+        <integer>2</integer>
+    </array>
+    <key>TestArrayAnyValues</key>
+    <array>
+        <string>str</string>
+        <integer>2</integer>
+        <true/>
+        <real>4.4</real>
+    </array>
+    <key>TestDictionaryIntValue</key>
+    <dict>
+        <key>first</key>
+        <integer>1</integer>
+        <key>second</key>
+        <integer>2</integer>
+    </dict>
+    <key>TestDictionaryAnyValue</key>
+    <dict>
+        <key>first</key>
+        <string>one</string>
+        <key>second</key>
+        <integer>2</integer>
+        <key>third</key>
+        <true/>
+        <key>forth</key>
+        <real>4.4</real>
+    </dict>
+</dict>
+</plist>
