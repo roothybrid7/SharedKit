@@ -1,14 +1,30 @@
 //
-//  RGBColor.swift
+//  RGBUIColor.swift
 //  SharedKit
 //
 //  Created by Satoshi Ohki on 2016/10/10.
 //
 //
 
-#if os(iOS) || os(watchOS) || os(tvOS)
-    import UIKit
-#endif
+import UIKit
+
+@available(iOS 9.1, tvOS 9.0, watchOS 2.0, *)
+public extension RGBConvertible where Color == UIColor {
+
+    /// Returns an opacity color.
+    var converted: Color {
+        return Color(colorLiteralRed: red, green: green, blue: blue, alpha: 1.0)
+    }
+}
+
+@available(iOS 9.1, tvOS 9.0, watchOS 2.0, *)
+public extension RGBAConvertiable where Color == UIColor {
+
+    /// Returns a color with the alpha component.
+    var converted: Color {
+        return Color(colorLiteralRed: red, green: green, blue: blue, alpha: alpha)
+    }
+}
 
 @available(iOS 9.1, tvOS 9.0, watchOS 2.0, *)
 extension UIColor {
