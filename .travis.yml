@@ -12,6 +12,7 @@ install:
 script:
   - swiftlint
   - set -o pipefail && xcodebuild -scheme SharedKit -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' test | xcpretty
+before_deploy:
   - ./bin/archive.sh
 deploy:
   provider: releases
@@ -21,4 +22,5 @@ deploy:
   file_glob: true
   file: 'dist/SharedKit-*.framework.tar.gz'
   on:
+    all_branches: true
     tags: true
