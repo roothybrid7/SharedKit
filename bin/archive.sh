@@ -9,4 +9,4 @@ filepath="dist/${TRAVIS_XCODE_SCHEME}-${TRAVIS_TAG}.tar.gz"
 
 carthage build --configuration Release -no-skip-currernt
 mkdir -p dist
-tar zcf filepath Carthage
+tar zcf ${filepath} Carthage

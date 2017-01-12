@@ -7,6 +7,7 @@ before_install:
   - brew update
 install:
   - brew upgrade swiftlint || brew install swiftlint
+  - brew upgrade carthage || brew install carthage
   - gem install xcpretty
 script:
   - swiftlint
