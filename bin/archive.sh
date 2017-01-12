@@ -5,8 +5,8 @@ if [[ -z "$TRAVIS_TAG" ]]; then
   exit 0
 fi
 
-filepath="dist/${TRAVIS_XCODE_SCHEME}-${TRAVIS_TAG}.tar.gz"
+filepath="dist/$(basename ${TRAVIS_BUILD_DIR})-${TRAVIS_TAG}.framework.tar.gz"
 
-carthage build --configuration Release -no-skip-currernt
+carthage build --configuration Release --no-skip-current
 mkdir -p dist
-tar zcf ${filepath} Carthage
+tar zcvf ${filepath} Carthage
