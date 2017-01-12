@@ -111,6 +111,7 @@
 		21A14C401E27976D00002A58 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F21DE1E278B7E00B85D8E /* DictionaryExtensions.swift */; };
 		21A14C411E27977200002A58 /* CGSizeExpressibleByStringLiteralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F21DD1E278B7E00B85D8E /* CGSizeExpressibleByStringLiteralExtensions.swift */; };
 		21A14C421E27977700002A58 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F21DC1E278B7E00B85D8E /* BundleExtensions.swift */; };
+		21A14C441E2797B400002A58 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F21DC1E278B7E00B85D8E /* BundleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -693,6 +694,7 @@
 				218F22531E278DF700B85D8E /* DictionaryExtensions.swift in Sources */,
 				218F225F1E278E8200B85D8E /* SyncDispatcher.swift in Sources */,
 				218F22561E278E2100B85D8E /* PredicateTemplate.swift in Sources */,
+				21A14C441E2797B400002A58 /* BundleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
