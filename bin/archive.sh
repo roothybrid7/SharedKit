@@ -2,6 +2,9 @@
 
 set -x
 
+echo $TRAVIS_REPO_SLUG
+echo $TRAVIS_BUILD_DIR
+
 if [[ -z "$TRAVIS_TAG" ]]; then
   echo "Skip archiving"
   exit 0
