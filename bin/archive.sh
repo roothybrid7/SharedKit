@@ -7,7 +7,7 @@ if [[ -z "$TRAVIS_TAG" ]]; then
   exit 0
 fi
 
-filepath="dist/$(basename ${TRAVIS_BUILD_DIR})-${TRAVIS_TAG}.tar.gz"
+filepath="dist/$(basename ${TRAVIS_BUILD_DIR})-${TRAVIS_TAG}.framework.tar.gz"
 
 carthage build --configuration Release --no-skip-current
 mkdir -p dist
