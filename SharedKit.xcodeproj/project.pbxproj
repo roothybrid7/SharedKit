@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		218F20A31E27698A00B85D8E /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 218F20A41E27698A00B85D8E /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+				218F20A71E27698E00B85D8E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		218F203D1E27659900B85D8E /* SharedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F20331E27659900B85D8E /* SharedKit.framework */; };
 		218F20441E27659900B85D8E /* SharedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 218F20361E27659900B85D8E /* SharedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,7 +54,6 @@
 		218F20971E27676100B85D8E /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F208B1E27676100B85D8E /* Assertions.swift */; };
 		218F20981E27676100B85D8E /* BundleLoadableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F208C1E27676100B85D8E /* BundleLoadableTests.swift */; };
 		218F20991E27676100B85D8E /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F208D1E27676100B85D8E /* DictionaryExtensions.swift */; };
-		218F209A1E27676100B85D8E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 218F208E1E27676100B85D8E /* Info.plist */; };
 		218F209B1E27676100B85D8E /* InfoPlistAccessibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F208F1E27676100B85D8E /* InfoPlistAccessibleTests.swift */; };
 		218F209C1E27676100B85D8E /* NavigationBarExtendableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F20901E27676100B85D8E /* NavigationBarExtendableTests.swift */; };
 		218F209D1E27676100B85D8E /* PredicateTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F20911E27676100B85D8E /* PredicateTemplateTests.swift */; };
@@ -301,8 +314,12 @@
 					};
 					218F203B1E27659900B85D8E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = CRP7G7R842;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
+					};
+					218F20A31E27698A00B85D8E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CRP7G7R842;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -321,6 +338,7 @@
 			targets = (
 				218F20321E27659900B85D8E /* SharedKit */,
 				218F203B1E27659900B85D8E /* SharedKitTests */,
+				218F20A31E27698A00B85D8E /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -337,11 +355,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218F209A1E27676100B85D8E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		218F20A71E27698E00B85D8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		218F202E1E27659900B85D8E /* Sources */ = {
@@ -556,7 +589,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = CRP7G7R842;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SharedKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.roothy.SharedKitTests;
@@ -572,13 +605,29 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = CRP7G7R842;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SharedKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.roothy.SharedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SharedKitTests/SharedKitTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		218F20A51E27698A00B85D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CRP7G7R842;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		218F20A61E27698A00B85D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CRP7G7R842;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -611,6 +660,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		218F20A41E27698A00B85D8E /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				218F20A51E27698A00B85D8E /* Debug */,
+				218F20A61E27698A00B85D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
