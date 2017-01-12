@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Example/Example-macOS/MyPlayground-macOS.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Example/Example-macOS/Example-macOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SharedKit.xcodeproj">
    </FileRef>
 </Workspace>
