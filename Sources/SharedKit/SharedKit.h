@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Satoshi Ohki. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SharedKit.
 FOUNDATION_EXPORT double SharedKitVersionNumber;

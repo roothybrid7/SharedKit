@@ -6,9 +6,7 @@
 //
 //
 
-#if os(iOS) || os(watchOS) || os(tvOS)
-    import UIKit
-#endif
+import UIKit
 
 @available(iOS 8.0, tvOS 9.0, watchOS 2.0, *)
 extension UIEdgeInsets: ExpressibleByStringLiteral {

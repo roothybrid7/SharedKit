@@ -33,6 +33,8 @@ public struct SystemInfo {
             return "watchOS"
         #elseif os(tvOS)
             return "tvOS"
+        #elseif os(macOS)
+            return "macOS"
         #else
             return "Unknown"
         #endif
