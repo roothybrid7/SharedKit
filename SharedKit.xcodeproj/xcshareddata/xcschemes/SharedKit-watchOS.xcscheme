@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21A14C491E27980200002A58"
-               BuildableName = "SharedKit-watchOS.framework"
+               BuildableName = "SharedKit.framework"
                BlueprintName = "SharedKit-watchOS"
                ReferencedContainer = "container:SharedKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21A14C491E27980200002A58"
-            BuildableName = "SharedKit-watchOS.framework"
+            BuildableName = "SharedKit.framework"
             BlueprintName = "SharedKit-watchOS"
             ReferencedContainer = "container:SharedKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21A14C491E27980200002A58"
-            BuildableName = "SharedKit-watchOS.framework"
+            BuildableName = "SharedKit.framework"
             BlueprintName = "SharedKit-watchOS"
             ReferencedContainer = "container:SharedKit.xcodeproj">
          </BuildableReference>
