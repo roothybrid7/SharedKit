@@ -23,6 +23,14 @@
 /* Begin PBXBuildFile section */
 		218F203D1E27659900B85D8E /* SharedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F20331E27659900B85D8E /* SharedKit.framework */; };
 		218F22411E278CA100B85D8E /* SharedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F22381E278CA100B85D8E /* SharedKit.framework */; };
+		21914AC81E28EE0F0062CD81 /* ActionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914AC71E28EE0F0062CD81 /* ActionableContainer.swift */; };
+		21914AC91E28EE1A0062CD81 /* ActionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914AC71E28EE0F0062CD81 /* ActionableContainer.swift */; };
+		21914ACA1E28EE1B0062CD81 /* ActionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914AC71E28EE0F0062CD81 /* ActionableContainer.swift */; };
+		21914ACB1E28EE1C0062CD81 /* ActionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914AC71E28EE0F0062CD81 /* ActionableContainer.swift */; };
+		21914ACD1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914ACC1E28EE510062CD81 /* DirectoryAccessible.swift */; };
+		21914ACE1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914ACC1E28EE510062CD81 /* DirectoryAccessible.swift */; };
+		21914ACF1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914ACC1E28EE510062CD81 /* DirectoryAccessible.swift */; };
+		21914AD01E28EE510062CD81 /* DirectoryAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914ACC1E28EE510062CD81 /* DirectoryAccessible.swift */; };
 		21A14C1A1E2795B800002A58 /* SharedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A14C111E2795B800002A58 /* SharedKit.framework */; };
 		21A14CEA1E27A41C00002A58 /* SharedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21A14CC81E27A3DB00002A58 /* SharedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21A14CEB1E27A41E00002A58 /* SharedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21A14CC81E27A3DB00002A58 /* SharedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,6 +177,8 @@
 		218F203C1E27659900B85D8E /* SharedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		218F22381E278CA100B85D8E /* SharedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		218F22401E278CA100B85D8E /* SharedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21914AC71E28EE0F0062CD81 /* ActionableContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionableContainer.swift; sourceTree = "<group>"; };
+		21914ACC1E28EE510062CD81 /* DirectoryAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryAccessible.swift; sourceTree = "<group>"; };
 		21A14C111E2795B800002A58 /* SharedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A14C191E2795B800002A58 /* SharedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A14C4A1E27980200002A58 /* SharedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +359,8 @@
 		21A14CC91E27A3DB00002A58 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				21914ACC1E28EE510062CD81 /* DirectoryAccessible.swift */,
+				21914AC71E28EE0F0062CD81 /* ActionableContainer.swift */,
 				21A14CCA1E27A3DB00002A58 /* BundleLoadable.swift */,
 				21A14CCB1E27A3DB00002A58 /* DictionaryConvertible.swift */,
 				21A14CCC1E27A3DB00002A58 /* InfoPlistAccessible.swift */,
@@ -741,6 +753,7 @@
 				21A14D121E27A47B00002A58 /* SystemInfo.swift in Sources */,
 				21A14D1D1E27A49100002A58 /* RGBAConvertible.swift in Sources */,
 				21A14D401E27A4C700002A58 /* RGBUIColor.swift in Sources */,
+				21914AC81E28EE0F0062CD81 /* ActionableContainer.swift in Sources */,
 				21A14CF31E27A43F00002A58 /* PaddingContentSizable.swift in Sources */,
 				21A14D3B1E27A4BF00002A58 /* PredicateTemplate.swift in Sources */,
 				21A14D051E27A46B00002A58 /* PreferenceAccessible.swift in Sources */,
@@ -753,6 +766,7 @@
 				21A14D011E27A46600002A58 /* KeyValueType.swift in Sources */,
 				21A14CF71E27A45400002A58 /* BundleLoadable.swift in Sources */,
 				21A14D431E27A4CD00002A58 /* StringExtensions.swift in Sources */,
+				21914ACD1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */,
 				21A14D111E27A47700002A58 /* SyncDispatcher.swift in Sources */,
 				21A14CF41E27A44400002A58 /* ViewConstraintable.swift in Sources */,
 			);
@@ -785,12 +799,14 @@
 				21A14D3F1E27A4C400002A58 /* RGBNSColor.swift in Sources */,
 				21A14CFA1E27A45B00002A58 /* DictionaryConvertible.swift in Sources */,
 				21A14D1A1E27A48700002A58 /* URLQueryItemFinder.swift in Sources */,
+				21914ACE1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */,
 				21A14D131E27A47C00002A58 /* SystemInfo.swift in Sources */,
 				21A14D311E27A4AF00002A58 /* DictionaryExtensions.swift in Sources */,
 				21A14D351E27A4B400002A58 /* DictionaryIndexable.swift in Sources */,
 				21A14CEF1E27A43500002A58 /* CellReusable.swift in Sources */,
 				21A14D261E27A49C00002A58 /* RGBHexParser.swift in Sources */,
 				21A14D0A1E27A47000002A58 /* SecureCodingWrapper.swift in Sources */,
+				21914AC91E28EE1A0062CD81 /* ActionableContainer.swift in Sources */,
 				21A14D4F1E27A4DC00002A58 /* UserDefaultsExtensions.swift in Sources */,
 				21A14D101E27A47600002A58 /* SyncDispatcher.swift in Sources */,
 				21A14CFE1E27A46100002A58 /* InfoPlistAccessible.swift in Sources */,
@@ -830,6 +846,7 @@
 				21A14D3D1E27A4C000002A58 /* PredicateTemplate.swift in Sources */,
 				21A14D451E27A4CE00002A58 /* StringExtensions.swift in Sources */,
 				21A14D481E27A4D200002A58 /* UIEdgeInsetsExpressibleByStringLiteral.swift in Sources */,
+				21914ACF1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */,
 				21A14CFF1E27A46100002A58 /* InfoPlistAccessible.swift in Sources */,
 				21A14CF81E27A45600002A58 /* BundleLoadable.swift in Sources */,
 				21A14D321E27A4AF00002A58 /* DictionaryExtensions.swift in Sources */,
@@ -840,6 +857,7 @@
 				21A14D141E27A47C00002A58 /* SystemInfo.swift in Sources */,
 				21A14D0F1E27A47600002A58 /* SyncDispatcher.swift in Sources */,
 				21A14D1F1E27A49200002A58 /* RGBAConvertible.swift in Sources */,
+				21914ACA1E28EE1B0062CD81 /* ActionableContainer.swift in Sources */,
 				21A14D1B1E27A48800002A58 /* URLQueryItemFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -868,6 +886,7 @@
 				21A14D041E27A46700002A58 /* KeyValueType.swift in Sources */,
 				21A14D081E27A46C00002A58 /* PreferenceAccessible.swift in Sources */,
 				21A14D151E27A47D00002A58 /* SystemInfo.swift in Sources */,
+				21914AD01E28EE510062CD81 /* DirectoryAccessible.swift in Sources */,
 				21A14D201E27A49300002A58 /* RGBAConvertible.swift in Sources */,
 				21A14D511E27A4DD00002A58 /* UserDefaultsExtensions.swift in Sources */,
 				21A14D331E27A4B000002A58 /* DictionaryExtensions.swift in Sources */,
@@ -879,6 +898,7 @@
 				21A14D3E1E27A4C100002A58 /* PredicateTemplate.swift in Sources */,
 				21A14D371E27A4B500002A58 /* DictionaryIndexable.swift in Sources */,
 				21A14D2F1E27A4AB00002A58 /* CGSizeExpressibleByStringLiteralExtensions.swift in Sources */,
+				21914ACB1E28EE1C0062CD81 /* ActionableContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
