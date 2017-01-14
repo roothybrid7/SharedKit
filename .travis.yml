@@ -13,14 +13,15 @@ script:
   - swiftlint
   - set -o pipefail && xcodebuild -scheme SharedKit -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' test | xcpretty
 before_deploy:
-  - ./bin/archive.sh
+  - carthage build --configuration Release --no-skip-current
+  - carthage archive --output "build/RealmUtilityKit-${TRAVIS_TAG}.framework.zip"
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
     secure: YeORsa3LUSgvARpHQE2+qbwY67K6yJpbAzLzrPGJh3FP8svg9g1smPOYMlM7mbTnkdHwiXEDqJSMHobDC5fOytP3GE7FE/Q3HJudXTzPd6rgyXywZ6YBxcK0Z7JBSg10HN9Msw85sT+Yw7BnoDB6Fi3W1aahV4v12q70HtZFQQ52VIrtgUCRjEBht/ujkPlScB+JXTFTXIj3gopu5zdKy1BdygdBTTPdCw/j1onj95Y4/mTHpAbiSHf1zJYMcx9EDsGEVqsyJXfu9xQ6v89yAx0pSmIp7AOGUKPGqmvfcWOiKbxS0WQkgawsilD4UHIMQyorGzHhp+JImg6ia46xfS51CXH62jVUhsXZsnIMiEDTdRZ8dTxDSpq4pOWbkdBzXTMTKxe//6AVIWrfBSFyK4IfnYplL6SxX49iRl1cX8VrGVu2EFpKQo4dAZQgIf+lBcaTLO3YOrZvPuNjpFavn8QtuLEkWdQLKVXZUBoKPGfFlJtMV/QkXb+CPDn034x6nIIzcZvotPVQ85cH5to4ccHWr8ARgUjRlifFw7ZGAjPNE3HTkzLjwPRevApML86F76ZrqnzVU9t/z2Btlny7ZAhr8bEcjUFIh64MhK1644iIiJNLHwegZICLqhap5vjoz7MW/mFbQlsmwOmq3ezU3QsbYugyj+hAMUevqdt7nNM=
   file_glob: true
-  file: 'build/SharedKit-*.framework.tar.gz'
+  file: 'build/RealmUtilityKit-*.framework.zip'
   on:
     all_branches: true
     tags: true
