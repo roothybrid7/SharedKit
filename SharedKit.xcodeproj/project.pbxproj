@@ -21,6 +21,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2152760C1E35FB100068C1BE /* ViewTaggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215276091E35FB100068C1BE /* ViewTaggable.swift */; };
+		2152760D1E35FB100068C1BE /* ViewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152760A1E35FB100068C1BE /* ViewTag.swift */; };
+		2152760E1E35FB100068C1BE /* ViewTagHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152760B1E35FB100068C1BE /* ViewTagHandling.swift */; };
+		2152760F1E35FB3B0068C1BE /* ViewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152760A1E35FB100068C1BE /* ViewTag.swift */; };
+		215276101E35FB3C0068C1BE /* ViewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152760A1E35FB100068C1BE /* ViewTag.swift */; };
+		215276111E35FB410068C1BE /* ViewTaggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215276091E35FB100068C1BE /* ViewTaggable.swift */; };
+		215276121E35FB420068C1BE /* ViewTaggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215276091E35FB100068C1BE /* ViewTaggable.swift */; };
+		215276131E35FB4D0068C1BE /* ViewTagHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152760B1E35FB100068C1BE /* ViewTagHandling.swift */; };
+		215276141E35FB4E0068C1BE /* ViewTagHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152760B1E35FB100068C1BE /* ViewTagHandling.swift */; };
+		215276161E35FBF90068C1BE /* ViewHitTestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215276151E35FBF90068C1BE /* ViewHitTestable.swift */; };
+		215276171E35FC010068C1BE /* ViewHitTestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215276151E35FBF90068C1BE /* ViewHitTestable.swift */; };
+		215276181E35FC020068C1BE /* ViewHitTestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215276151E35FBF90068C1BE /* ViewHitTestable.swift */; };
 		218F203D1E27659900B85D8E /* SharedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F20331E27659900B85D8E /* SharedKit.framework */; };
 		218F22411E278CA100B85D8E /* SharedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F22381E278CA100B85D8E /* SharedKit.framework */; };
 		21914AC81E28EE0F0062CD81 /* ActionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21914AC71E28EE0F0062CD81 /* ActionableContainer.swift */; };
@@ -173,6 +185,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		215276091E35FB100068C1BE /* ViewTaggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTaggable.swift; sourceTree = "<group>"; };
+		2152760A1E35FB100068C1BE /* ViewTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTag.swift; sourceTree = "<group>"; };
+		2152760B1E35FB100068C1BE /* ViewTagHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTagHandling.swift; sourceTree = "<group>"; };
+		215276151E35FBF90068C1BE /* ViewHitTestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHitTestable.swift; sourceTree = "<group>"; };
 		218F20331E27659900B85D8E /* SharedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		218F203C1E27659900B85D8E /* SharedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		218F22381E278CA100B85D8E /* SharedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -382,6 +398,10 @@
 				21A14CD61E27A3DB00002A58 /* NavigationBarExtendable.swift */,
 				21A14CD71E27A3DB00002A58 /* PaddingContentSizable.swift */,
 				21A14CD81E27A3DB00002A58 /* ViewConstraintable.swift */,
+				215276151E35FBF90068C1BE /* ViewHitTestable.swift */,
+				2152760A1E35FB100068C1BE /* ViewTag.swift */,
+				215276091E35FB100068C1BE /* ViewTaggable.swift */,
+				2152760B1E35FB100068C1BE /* ViewTagHandling.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -744,6 +764,8 @@
 				21A14D191E27A48500002A58 /* URLQueryItemFinder.swift in Sources */,
 				21A14D2D1E27A4A800002A58 /* CGSizeExpressibleByStringLiteralExtensions.swift in Sources */,
 				21A14D4A1E27A4D600002A58 /* URLExtensions.swift in Sources */,
+				2152760E1E35FB100068C1BE /* ViewTagHandling.swift in Sources */,
+				2152760C1E35FB100068C1BE /* ViewTaggable.swift in Sources */,
 				21A14D091E27A46F00002A58 /* SecureCodingWrapper.swift in Sources */,
 				21A14D471E27A4D100002A58 /* UIEdgeInsetsExpressibleByStringLiteral.swift in Sources */,
 				21A14CEE1E27A43400002A58 /* CellReusable.swift in Sources */,
@@ -761,6 +783,7 @@
 				21A14D4E1E27A4DB00002A58 /* UserDefaultsExtensions.swift in Sources */,
 				21A14D251E27A49C00002A58 /* RGBHexParser.swift in Sources */,
 				21A14D381E27A4B800002A58 /* ImageConvertible.swift in Sources */,
+				215276161E35FBF90068C1BE /* ViewHitTestable.swift in Sources */,
 				21A14D341E27A4B300002A58 /* DictionaryIndexable.swift in Sources */,
 				21A14D301E27A4AE00002A58 /* DictionaryExtensions.swift in Sources */,
 				21A14D011E27A46600002A58 /* KeyValueType.swift in Sources */,
@@ -769,6 +792,7 @@
 				21914ACD1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */,
 				21A14D111E27A47700002A58 /* SyncDispatcher.swift in Sources */,
 				21A14CF41E27A44400002A58 /* ViewConstraintable.swift in Sources */,
+				2152760D1E35FB100068C1BE /* ViewTag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,12 +819,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A14D221E27A49700002A58 /* RGBConverter.swift in Sources */,
+				215276111E35FB410068C1BE /* ViewTaggable.swift in Sources */,
 				21A14D2A1E27A4A300002A58 /* BundleExtensions.swift in Sources */,
 				21A14D3F1E27A4C400002A58 /* RGBNSColor.swift in Sources */,
 				21A14CFA1E27A45B00002A58 /* DictionaryConvertible.swift in Sources */,
 				21A14D1A1E27A48700002A58 /* URLQueryItemFinder.swift in Sources */,
+				215276131E35FB4D0068C1BE /* ViewTagHandling.swift in Sources */,
 				21914ACE1E28EE510062CD81 /* DirectoryAccessible.swift in Sources */,
 				21A14D131E27A47C00002A58 /* SystemInfo.swift in Sources */,
+				2152760F1E35FB3B0068C1BE /* ViewTag.swift in Sources */,
 				21A14D311E27A4AF00002A58 /* DictionaryExtensions.swift in Sources */,
 				21A14D351E27A4B400002A58 /* DictionaryIndexable.swift in Sources */,
 				21A14CEF1E27A43500002A58 /* CellReusable.swift in Sources */,
@@ -816,6 +843,7 @@
 				21A14CF51E27A44900002A58 /* ViewConstraintable.swift in Sources */,
 				21A14D4B1E27A4D700002A58 /* URLExtensions.swift in Sources */,
 				21A14D3C1E27A4C000002A58 /* PredicateTemplate.swift in Sources */,
+				215276171E35FC010068C1BE /* ViewHitTestable.swift in Sources */,
 				21A14D441E27A4CD00002A58 /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -832,10 +860,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A14D0B1E27A47000002A58 /* SecureCodingWrapper.swift in Sources */,
+				215276121E35FB420068C1BE /* ViewTaggable.swift in Sources */,
 				21A14D271E27A49D00002A58 /* RGBHexParser.swift in Sources */,
 				21A14D4C1E27A4D800002A58 /* URLExtensions.swift in Sources */,
+				215276181E35FC020068C1BE /* ViewHitTestable.swift in Sources */,
 				21A14D171E27A48100002A58 /* UIKitExpressibleByStringLiteral.swift in Sources */,
 				21A14CF01E27A43600002A58 /* CellReusable.swift in Sources */,
+				215276141E35FB4E0068C1BE /* ViewTagHandling.swift in Sources */,
 				21A14D361E27A4B400002A58 /* DictionaryIndexable.swift in Sources */,
 				21A14D071E27A46C00002A58 /* PreferenceAccessible.swift in Sources */,
 				21A14D031E27A46700002A58 /* KeyValueType.swift in Sources */,
@@ -853,6 +884,7 @@
 				21A14D2B1E27A4A400002A58 /* BundleExtensions.swift in Sources */,
 				21A14D2E1E27A4AA00002A58 /* CGSizeExpressibleByStringLiteralExtensions.swift in Sources */,
 				21A14D501E27A4DD00002A58 /* UserDefaultsExtensions.swift in Sources */,
+				215276101E35FB3C0068C1BE /* ViewTag.swift in Sources */,
 				21A14D411E27A4C900002A58 /* RGBUIColor.swift in Sources */,
 				21A14D141E27A47C00002A58 /* SystemInfo.swift in Sources */,
 				21A14D0F1E27A47600002A58 /* SyncDispatcher.swift in Sources */,
