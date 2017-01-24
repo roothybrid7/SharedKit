@@ -23,7 +23,7 @@ public protocol ViewHitTestable {
     extension UIView: ViewHitTestable {
 
         public var isHittable: Bool {
-            return !isHidden && isUserInteractionEnabled && alpha >= 0.01
+            return !isHidden && isUserInteractionEnabled && alpha > 0.01
         }
     }
 #elseif os(macOS)
