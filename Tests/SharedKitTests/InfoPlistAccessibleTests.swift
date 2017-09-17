@@ -10,7 +10,7 @@ import XCTest
 import UIKit
 @testable import SharedKit
 
-// swiftlint:disable force_try
+// swiftlint:disable superfluous_disable_command
 // swiftlint:disable force_cast
 
 class InfoPlistAccessibleTests: XCTestCase {

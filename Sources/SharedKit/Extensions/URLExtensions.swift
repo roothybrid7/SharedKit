@@ -63,7 +63,7 @@ extension URLComponents: URLOriginExtractable {}
 public extension URL {
 
     var isAbsoluteURL: Bool {
-        if let _ = scheme, let _ = host {
+        if scheme != nil, host != nil {
             return true
         }
         return false
@@ -73,7 +73,7 @@ public extension URL {
 public extension URLComponents {
 
     var isAbsoluteURL: Bool {
-        if let _ = scheme, let _ = host {
+        if scheme != nil, host != nil {
             return true
         }
         return false

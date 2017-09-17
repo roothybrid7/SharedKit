@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// A type that support to convert rgb color values.
 public protocol RGBConvertible {
@@ -15,9 +16,9 @@ public protocol RGBConvertible {
     /// A converted Integer representation of rgb from hex value.
     static func rgbUInt(from hex: String) -> UInt
 
-    var red: Float { get set }
-    var green: Float { get set }
-    var blue: Float { get set }
+    var red: CGFloat { get set }
+    var green: CGFloat { get set }
+    var blue: CGFloat { get set }
 
     /// Returns a color object from a rgb color value.
     var converted: Color { get }
@@ -25,7 +26,7 @@ public protocol RGBConvertible {
 
 /// A type that support to convert rgba color values.
 public protocol RGBAConvertiable: RGBConvertible {
-    var alpha: Float { get set }
+    var alpha: CGFloat { get set }
 }
 
 public extension RGBConvertible {

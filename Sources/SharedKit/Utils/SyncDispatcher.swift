@@ -28,7 +28,7 @@ func syncExecute<Result>(withLock obj: AnyObject, processingBlock block: () thro
 /// Specified Void type.
 ///
 /// SeeAlso: `syncExecute<Result>(withLock:processingBlock:)`
-func syncExecute(withLock obj: AnyObject, processingBlock block: () throws -> Void) rethrows -> Void {
+func syncExecute(withLock obj: AnyObject, processingBlock block: () throws -> Void) rethrows {
     objc_sync_enter(obj)
     defer {
         objc_sync_exit(obj)

@@ -8,7 +8,7 @@
 
 import Foundation
 
-fileprivate let unknownShortVersion = "0.0.0"
+private let unknownShortVersion = "0.0.0"
 
 public extension Bundle {
 

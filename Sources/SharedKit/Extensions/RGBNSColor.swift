@@ -13,7 +13,7 @@ public extension RGBConvertible where Color == NSColor {
 
     /// Returns an opacity color.
     var converted: Color {
-        return Color(colorLiteralRed: red, green: green, blue: blue, alpha: 1.0)
+        return Color(red: red, green: green, blue: blue, alpha: 1.0)
     }
 }
 
@@ -22,7 +22,7 @@ public extension RGBAConvertiable where Color == NSColor {
 
     /// Returns a color with the alpha component.
     var converted: Color {
-        return Color(colorLiteralRed: red, green: green, blue: blue, alpha: alpha)
+        return Color(red: red, green: green, blue: blue, alpha: alpha)
     }
 }
 
@@ -30,15 +30,15 @@ public extension RGBAConvertiable where Color == NSColor {
 extension NSColor {
 
     public convenience init(rgbaConverter converter: RGBAConverter) {
-        self.init(colorLiteralRed: converter.red, green: converter.green, blue: converter.blue, alpha: converter.alpha)
+        self.init(red: converter.red, green: converter.green, blue: converter.blue, alpha: converter.alpha)
     }
 
-    public convenience init(rgbUInt value: UInt, withAlpha alpha: Float = 1.0) {
+    public convenience init(rgbUInt value: UInt, withAlpha alpha: CGFloat = 1.0) {
         let converter = RGBAConverter(rgbUInt: value, withAlpha: alpha)
         self.init(rgbaConverter: converter)
     }
 
-    public convenience init(rgbHex value: String, withAlpha alpha: Float = 1.0) {
+    public convenience init(rgbHex value: String, withAlpha alpha: CGFloat = 1.0) {
         let converter = RGBAConverter(rgbHex: value, withAlpha: alpha)
         self.init(rgbaConverter: converter)
     }

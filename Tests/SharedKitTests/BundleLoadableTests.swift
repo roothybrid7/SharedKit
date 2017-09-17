@@ -10,7 +10,7 @@ import XCTest
 import UIKit
 @testable import SharedKit
 
-fileprivate class BundleView: UIView, BundleLoadable {
+private class BundleView: UIView, BundleLoadable {
 }
 
 class BundleLoadableTests: XCTestCase {

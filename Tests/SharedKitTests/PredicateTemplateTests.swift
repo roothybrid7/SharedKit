@@ -9,7 +9,7 @@
 import XCTest
 @testable import SharedKit
 
-fileprivate class Target: NSObject {
+private class Target: NSObject {
     var name: String?
     var number: Int = 0
 
