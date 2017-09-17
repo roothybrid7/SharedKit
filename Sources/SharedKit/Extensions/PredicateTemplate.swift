@@ -22,7 +22,7 @@ public extension Predicate {
 
         static let `null` = Predicate(format: "$\(attrKey) == NULL")
         static let notNull = Predicate(format: "$\(attrKey) != NULL")
-        static let `in` = Predicate(format: "$\(attrKey) in $\(valueListKey)")     // swiftlint:disable:this variable_name
+        static let `in` = Predicate(format: "$\(attrKey) in $\(valueListKey)")     // swiftlint:disable:this identifier_name
         static let notIn = Predicate(format: "NOT ($\(attrKey) IN $\(valueListKey))")
         static let equals = Predicate(format: "$\(attrKey) == $\(valueKey)")
         static let notEquals = Predicate(format: "$\(attrKey) != $\(valueKey)")
