@@ -22,8 +22,12 @@ public protocol ViewHitTestable {
     @available(iOS 8, tvOS 9, *)
     extension UIView: ViewHitTestable {
 
+        public var isVisible: Bool {
+            return !isHidden && alpha > 0.01
+        }
+
         public var isHittable: Bool {
-            return !isHidden && isUserInteractionEnabled && alpha > 0.01
+            return isUserInteractionEnabled && isVisible
         }
     }
 #elseif os(macOS)
